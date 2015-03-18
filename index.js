@@ -1,22 +1,8 @@
-angular.module('watson', ['ngRoute', 'ngResource'])
+angular.module('watson', ['ngRoute', 'ngResource', 'mgcrea.ngStrap'])
 
-.config(['$routeProvider', '$locationProvider', '$httpProvider', function($routeProvider, $locationProvider, $httpProvider) {
+.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
 	$locationProvider.html5Mode(true);
-
-
-
-
-	//allow cors
-	//$httpProvider.defaults.useXDomain = true;
-	//$httpProvider.defaults.withCredentials = true;
-	//delete $httpProvider.defaults.headers.common["X-Requested-With"];
-	//$httpProvider.defaults.headers.common["Accept"] = "application/json";
-	//$httpProvider.defaults.headers.common["Content-Type"] = "application/json";
-
-
-
-
 
 	$routeProvider.when('/', {
 		templateUrl: 'templates/index.html',
