@@ -10,9 +10,11 @@
 
     <ul class="nav navbar-nav navbar-form navbar-right">
         <li>
-            <div class="form-group">
-                <input class="form-control" placeholder="Search Watson!" type="text" />
-            </div>
+            <form ng-submit="watsonCtrl.askWatson(watsonCtrl.question)">
+                <div class="form-group">
+                    <input ng-model="watsonCtrl.question" class="form-control" placeholder="Search Watson!" type="text" />
+                </div>
+            </form>
         </li>
     </ul>
 </div>

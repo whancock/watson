@@ -5,8 +5,7 @@ angular.module('watson', ['ngRoute', 'ngResource', 'mgcrea.ngStrap'])
 	$locationProvider.html5Mode(true);
 
 	$routeProvider.when('/', {
-		templateUrl: 'templates/index.html',
-		controller: 'WatsonCtrl'
+		templateUrl: 'templates/index.html'
 	}).otherwise({
 		redirectTo: '/'
 	});

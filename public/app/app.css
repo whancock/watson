@@ -4,3 +4,12 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
 }
+
+ul {
+	list-style-type: none;
+}
+
+.body-with-margin {
+	width: 1000px;
+	margin: 0 auto;
+}

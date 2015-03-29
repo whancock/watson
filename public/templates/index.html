@@ -1,7 +1,15 @@
-<div ng-include src="'templates/header.html'"></div>
+<div ng-controller="WatsonCtrl as watsonCtrl">
 
-<div>
+	<div ng-include src="'templates/header.html'"></div>
 
-    <h1>This is our Watson App</h1>
+	<div class="body-with-margin">
+	    <h1>This is our Watson App</h1>
 
+	    <ul>
+		    <li ng-repeat="answer in watsonCtrl.watsonResult.answers">
+		    	<div>{{answer.text}}</div>
+		    </li>
+	    </ul>
+
+	</div>
 </div>

@@ -1,9 +1,16 @@
 angular.module('watson')
 
-.controller('WatsonCtrl', ['$scope', 'WsWatson', function($scope, WsWatson) {
+.controller('WatsonCtrl', ['WsWatson', function(WsWatson) {
 
-	//console.log('we hit the controller');
+	var ctrl = this;
 
-	//WsWatson.ask('something');
+	ctrl.askWatson = function(question) {
 
+		WsWatson.ask({
+			question: question
+		}, function(result) {
+			//console.log(result);
+			ctrl.watsonResult = result.question
+		});
+	};
 }]);
