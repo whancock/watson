@@ -1,6 +1,6 @@
 angular.module('watson')
 
-.controller('WatsonCtrl', ['WsWatson', function(WsWatson) {
+    .controller('WatsonCtrl', ['WsWatson', 'WsConversations', function(WsWatson, WsConversations) {
 
 	var ctrl = this;
 
@@ -13,4 +13,9 @@ angular.module('watson')
 			ctrl.watsonResult = result.question
 		});
 	};
+
+	// WsConversations.query({},function(data) {
+	//     ctrl.conversations = data;
+	// });
+
 }]);
