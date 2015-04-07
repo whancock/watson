@@ -6,6 +6,8 @@ angular.module('watson', ['ngRoute', 'ngResource', 'mgcrea.ngStrap'])
 
 	$routeProvider.when('/', {
 		templateUrl: 'templates/index.html'
+	}).when('/project', {
+		templateUrl: 'templates/project.html'
 	}).otherwise({
 		redirectTo: '/'
 	});

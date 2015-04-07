@@ -1,0 +1,40 @@
+<div ng-controller="ProjectCtrl as projectCtrl">
+
+	<div ng-include src="'templates/header.html'"></div>
+
+	<div class="body-with-margin">
+
+		<h1>Demo Project</h1>
+
+		<div class="row">
+
+			<div class="col-xs-6">
+				
+				<form ng-submit="projectCtrl.askQuestion(projectCtrl.question)">
+					<input ng-model="projectCtrl.question" type="text" style="font-size: 30px;" size="25" />
+				</form>
+
+
+			</div>
+
+			<div class="col-xs-6">
+				
+
+				<ul>
+					<li ng-repeat="qaPair in projectCtrl.setQAPairs">
+						<div>{{qaPair.question}}</div>
+						<div>{{qaPair.answer}}</div>
+					</li>
+
+				</ul>
+
+
+			</div>
+			
+
+		</div>
+
+		
+
+	</div>
+</div>
