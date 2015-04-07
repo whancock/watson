@@ -66,9 +66,11 @@ angular.module('watson')
 
     	ctrl.deny = function() {
 
-    		ctrl.needsApproval = false;
-    		ctrl.currentQuestion = '';
-    		ctrl.currentAnswer = '';
+    		//ctrl.needsApproval = false;
+    		//ctrl.currentQuestion = '';
+    		//ctrl.currentAnswer = '';
+
+    		ctrl.currentAnswer = cannedResponses.pop();
 
     	};
 
