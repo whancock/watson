@@ -1,6 +1,4 @@
-angular.module('watson').
-
-factory('WsWatson', ['$resource', function($resource) {
+angular.module('watson').factory('WsWatson', ['$resource', function($resource) {
 
 	return $resource('/index.php/api/ask/:question', {}, {
 		ask: {
@@ -8,4 +6,12 @@ factory('WsWatson', ['$resource', function($resource) {
 			isArray: false
 		}
 	})
-}]);
+}])
+
+
+.factory('WsConversations', ['$resource', function($resource) {
+
+    return $resource('/index.php/api/conversations/', {}, {
+    	// default GET
+    })
+}])
