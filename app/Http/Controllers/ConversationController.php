@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class WatsonController extends Controller {
+class ConversationController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -15,7 +15,6 @@ class WatsonController extends Controller {
 	public function index()
 	{
 		//
-
 	}
 
 	/**
