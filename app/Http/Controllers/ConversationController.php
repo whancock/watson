@@ -3,6 +3,8 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Conversation;
+
 use Illuminate\Http\Request;
 
 class ConversationController extends Controller {
@@ -14,7 +16,7 @@ class ConversationController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		return Conversation::all()->toJson();
 	}
 
 	/**
