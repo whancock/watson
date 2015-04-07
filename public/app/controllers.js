@@ -25,6 +25,11 @@ angular.module('watson')
     	var ctrl = this;
 
 
+    	ctrl.needsApproval = false;
+    	ctrl.currentQuestion = '';
+    	ctrl.currentAnswer = '';
+
+
     	ctrl.setQAPairs = [{
     		question: "what is this question?",
     		answer: "It's a moose!"
@@ -40,11 +45,31 @@ angular.module('watson')
     	];
 
     	ctrl.askQuestion = function(question) {
-    		this.setQAPairs.push({
-    			question: question,
-    			answer: cannedResponses.pop()
-    		});
+    		ctrl.needsApproval = true;
+    		ctrl.currentQuestion = question;
+    		ctrl.currentAnswer = cannedResponses.pop();
     		ctrl.question = '';
+    	};
+
+    	ctrl.approve = function() {
+
+    		this.setQAPairs.push({
+    			question: ctrl.currentQuestion,
+    			answer: ctrl.currentAnswer
+    		});
+
+    		ctrl.needsApproval = false;
+    		ctrl.currentQuestion = '';
+    		ctrl.currentAnswer = '';
+
+    	};
+
+    	ctrl.deny = function() {
+
+    		ctrl.needsApproval = false;
+    		ctrl.currentQuestion = '';
+    		ctrl.currentAnswer = '';
+
     	};
 
 

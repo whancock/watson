@@ -15,6 +15,24 @@
 				</form>
 
 
+
+				<div ng-show="projectCtrl.needsApproval">
+					
+					<div class=col-xs-6>
+						<h3>Current Question:</h3>
+						<div>{{projectCtrl.currentQuestion}}</div>
+						<div>{{projectCtrl.currentAnswer}}</div>
+					</div>
+
+					<div class=col-xs-6>
+						<h3></h3>
+						<a href="#" ng-click="projectCtrl.approve()">Yes</a>
+						<a href="#" ng-click="projectCtrl.deny()">No</a>
+					</div>
+
+				</div>
+
+
 			</div>
 
 			<div class="col-xs-6">

@@ -22,7 +22,6 @@ Route::group(array('prefix' => 'api'), function() {
 
 
 
-
     Route::resource('question', 'QuestionController');
     Route::resource('conversation', 'ConversationController');
 
