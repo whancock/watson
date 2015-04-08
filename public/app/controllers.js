@@ -29,7 +29,7 @@ angular.module('watson')
     	ctrl.currentQuestion = '';
     	ctrl.currentAnswer = '';
 
-
+/*
     	ctrl.setQAPairs = [{
     		question: "what is this question?",
     		answer: "It's a moose!"
@@ -37,7 +37,22 @@ angular.module('watson')
     		question: "What in the hell?",
     		answer: "Yeah yeah!"
     	}];
+*/
 
+        ctrl.setQAPairs = [
+        
+        {
+    		question: "What are good crops to grow in Kigali, Rwanda?",
+    		answer: "Reliant on rain-fed agriculture, Rwanda is highly vulnerable to climate change. Increases in temperature and changes to rainfall patterns, resulting in floods, landslides and droughts, significantly reduce crop yields, negatively impacting livelihoods, food security and export earnings. Rising temperatures are also predicted to increase the spread of pests and diseases, while the yield of some crops (including maize and rice) is forecast to drop by 10-15 per cent for every one degree Centigrade rise in minimum temperature. And as temperatures rise, the altitudes at which tea and coffee can be grown will also rise, which may affect the land available to grow these crops, due to differing soils and steeper slopes, and lead to conflict over land."
+    	},
+    	{
+    		question: "What are the most popular crops in Kigali, Rwanda?",
+    		answer: "The favorable climatic conditions and the generally fertile soils allow cultivation of a wide range of crops in Rwanda. Major food crops include maize, rice, banana (cooking, beer and fruit), Irish potato, sweet potato, cassava, sorghum and beans. Vegetables such as onions, cabbages, dodo, gourds, and eggplants are also widely grown. Cash crops such as coffee, tea and sugarcane are grown on commercial  scales forexports and domestic consumption in Rwanda."
+    	},
+        {
+            question: "How do I cultivate bananas?",
+            answer: "Bananas need rich, moisture and well-drained soil with 40% clay, 75% silt, 85% loam. Bananas prefer a more acidic soil with pH between 6-7.5. Low pH soil makes banana more susceptible to Panama disease. Avoid soil that is sandy, salty, nutritionally deficient and ill-drained soil. If soil is not in the most favorable condition, improve it! Light sandy soil can be improved by placing mulch around the Banana plants. This will improve water retention and prevent nutrients from percolating quickly into the soil. Nutritionally deficient soil can be improved by incorporating organic matter to the soil before you plant your Bananas and then mulch them thickly. This process should be repeated as often as possible. Bananas do not tolerate waterlogging because its roots will rot. This however can be resolved by planting the Bananas in raised beds."
+    	}];
 /*
     var cannedResponses = [
             'You are a cow!',
