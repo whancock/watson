@@ -13,3 +13,9 @@ ul {
 	width: 1000px;
 	margin: 0 auto;
 }
+
+.chat-log {
+    height: 120px; /* will be heightening after dev time */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
