@@ -8,14 +8,15 @@
 					<ul>
 						<li ng-repeat="qaPair in projectCtrl.setQAPairs">
 							<div class="user chatlabel">You:</div>
-							<div class="chatanswer user">{{qaPair.question}}</div>
+							<div class="user chatanswer">{{qaPair.question}}</div>
 							<div class="watson chatlabel">Watson:</div>
-							<div class="chatanswer watson">{{qaPair.answer}}</div>
+							<div class="watson chatanswer">{{qaPair.answer}}</div>
 						</li>
 					</ul>
 				</div>
 				<div class="chat-entry">
-					<form ng-submit="projectCtrl.askQuestion(projectCtrl.question)">
+					<!-- <form ng-submit="projectCtrl.askQuestion(projectCtrl.question)"> -->
+					<form ng-submit="projectCtrl.chatQuestion(projectCtrl.question)">
 						<input ng-model="projectCtrl.question" type="text" class="user submit" />
 					</form>
 				</div>
