@@ -79,7 +79,6 @@ angular.module('watson')
     	};
 
 	// Questions for the chat: instantly approved. Merges .askQuestion() and .approve()
-
 	ctrl.chatQuestion = function(question) {
     	    ctrl.needsApproval = false;
     	    ctrl.currentQuestion = '';
@@ -89,12 +88,9 @@ angular.module('watson')
 
 	    this.setQAPairs.push({
     		question: question,
-    		answer: cannedAnswer //"I don't know"//cannedResponses[question].pop()// TODO or "I don't know"
+    		answer: cannedAnswer
     	    });
 	    ctrl.question = '';
-    	    //ctrl.currentAnswer = cannedResponses.pop();
-    	    // ctrl.currentAnswer = cannedResponses[ctrl.currentQuestion].pop();
-    	    
     	};
 	
 
@@ -111,12 +107,6 @@ angular.module('watson')
     	};
 
     	ctrl.deny = function() {
-
-    	    //ctrl.needsApproval = false;
-    	    //ctrl.currentQuestion = '';
-    	    //ctrl.currentAnswer = '';
-
-    	    //ctrl.currentAnswer = cannedResponses.pop();
     	    ctrl.currentAnswer = cannedResponses[ctrl.currentQuestion].pop();
 
     	};
