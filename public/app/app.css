@@ -14,8 +14,15 @@ ul {
 	margin: 0 auto;
 }
 
+.chat h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
 .chat-log {
-	height: 120px; /* will be heightening after dev time */
+	height: 300px; /* will be heightening after dev time */
 	overflow-x: hidden;
 	overflow-y: scroll;
 	border-style: solid;
