@@ -13,7 +13,11 @@
 
 
 Route::get('/', function() {
-    return View('root'); 
+    return View('root');
+});
+
+Route::any('project', function() {
+    return View('root');
 });
 
 
