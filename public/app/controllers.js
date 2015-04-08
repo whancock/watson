@@ -91,6 +91,10 @@ angular.module('watson')
     		answer: cannedAnswer
     	    });
 	    ctrl.question = '';
+
+	    // This is terrible (should go elsewhere, probably a directive, and fires too soon)
+	    // elem = document.getElementById("chat-log"); 
+	    // elem.scrollTop = elem.scrollHeight;
     	};
 	
 
