@@ -14,6 +14,7 @@
 						</li>
 					</ul>
 				</div>
+				<!-- document.getElementById("chat-log") -->
 				<div class="chat-entry">
 					<!-- <form ng-submit="projectCtrl.askQuestion(projectCtrl.question)"> -->
 					<form ng-submit="projectCtrl.chatQuestion(projectCtrl.question)">
@@ -22,18 +23,18 @@
 				</div>
 
 				<!-- TODO Let's ditch this and have automatic submission -->
-				<div ng-show="projectCtrl.needsApproval">
-					<div class=col-xs-6>
-						<h3>Current Question:</h3>
-						<div>{{projectCtrl.currentQuestion}}</div>
-						<div>{{projectCtrl.currentAnswer}}</div>
-					</div>
-					<div class=col-xs-6>
-						<h3></h3>
-						<a href="#" ng-click="projectCtrl.approve()">Save</a>
-						<a href="#" ng-click="projectCtrl.deny()">See more</a>
-					</div>
+				<!-- <div ng-show="projectCtrl.needsApproval">
+				<div class=col-xs-6>
+				<h3>Current Question:</h3>
+				<div>{{projectCtrl.currentQuestion}}</div>
+				<div>{{projectCtrl.currentAnswer}}</div>
 				</div>
+				<div class=col-xs-6>
+				<h3></h3>
+				<a href="#" ng-click="projectCtrl.approve()">Save</a>
+				<a href="#" ng-click="projectCtrl.deny()">See more</a>
+				</div>
+				</div> -->
 			</div>
 
 			<!-- <div class="col-xs-6">

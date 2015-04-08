@@ -91,9 +91,10 @@ angular.module('watson')
     		question: question,
     		answer: cannedAnswer //"I don't know"//cannedResponses[question].pop()// TODO or "I don't know"
     	    });
+	    ctrl.question = '';
     	    //ctrl.currentAnswer = cannedResponses.pop();
     	    // ctrl.currentAnswer = cannedResponses[ctrl.currentQuestion].pop();
-    	    // ctrl.question = '';
+    	    
     	};
 	
 
@@ -107,7 +108,6 @@ angular.module('watson')
     	    ctrl.needsApproval = false;
     	    ctrl.currentQuestion = '';
     	    ctrl.currentAnswer = '';
-
     	};
 
     	ctrl.deny = function() {
