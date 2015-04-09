@@ -91,10 +91,6 @@ angular.module('watson')
     		answer: cannedAnswer
     	    });
 	    ctrl.question = '';
-
-	    // This is terrible (should go elsewhere, probably a directive, and fires too soon)
-	    elem = document.getElementById("chat-log"); 
-	    elem.scrollTop = elem.scrollHeight;
     	};
 	
 
@@ -108,6 +104,7 @@ angular.module('watson')
     	    ctrl.needsApproval = false;
     	    ctrl.currentQuestion = '';
     	    ctrl.currentAnswer = '';
+
     	};
 
     	ctrl.deny = function() {
@@ -118,4 +115,13 @@ angular.module('watson')
 
     }])
 
+    .directive('chatDownDirective', function(){
+	return function(scope, element, attrs) {
+	    if (scope.$last){
+		elem = document.getElementById("chat-log");
+		elem.scrollTop = elem.scrollHeight;
+		console.log("scroll top is:" + elem.scrollTop + " scroll height is:" + elem.scrollHeight);
+	    }
+	}
+    })
 ;

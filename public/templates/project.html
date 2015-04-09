@@ -6,7 +6,7 @@
 				<h1>Ask Watson</h1>
 				<div id="chat-log" class="chat-log">
 					<ul>
-						<li ng-repeat="qaPair in projectCtrl.setQAPairs">
+						<li ng-repeat="qaPair in projectCtrl.setQAPairs" chat-down-directive>
 							<div class="user chatlabel">You:</div>
 							<div class="user chatanswer">{{qaPair.question}}</div>
 							<div class="watson chatlabel">Watson:</div>
@@ -52,3 +52,10 @@
 		</div>
 	</div>
 </div>
+<script>
+function scrollChat () {
+	elem = document.getElementById("chat-log"); 
+	elem.scrollTop = elem.scrollHeight;
+}
+window.onload(scrollChat());
+</script>
