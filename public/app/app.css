@@ -42,7 +42,7 @@ body {
 }
 
 .chat-entry {
-	padding: 30px;
+	padding-top: 15px;
 }
 
 .chatlabel {
@@ -51,7 +51,7 @@ body {
 }
 
 .chat-entry input {
-	width: 100%;
+	width: 95%;
 }
 
 .user {
