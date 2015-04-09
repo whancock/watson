@@ -10,7 +10,18 @@ angular.module('watson')
 		question: question
 	    }, function(result) {
 		//console.log(result);
-		ctrl.watsonResult = result.question
+		ctrl.watson_result = 
+		{
+			meta:
+		    	{
+				qclasslist: 	result.question.qclasslist,
+				focuslist: 	result.question.focuslist,
+		    		latlist: 	result.question.latlist,
+				synonymlist: 	result.question.synonymlist,	
+		    	},
+		    	answers: result.question.answers,
+		    	evidence: result.question.evidencelist
+		};
 	    });
 	};
 
