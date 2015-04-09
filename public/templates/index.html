@@ -6,7 +6,7 @@
 	    <h1>This is our Watson App</h1>
 
 	    <ul>
-		    <li ng-repeat="answer in watsonCtrl.watson_result.answers">
+		    <li ng-repeat="answer.text in watsonCtrl.watson_result.answers">
 		    	<div>{{answer.text}}</div>
 		    </li>
 	    </ul>
