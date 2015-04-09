@@ -45,7 +45,18 @@ Route::group(array('prefix' => 'api'), function() {
 
         $url = "https://watson-wdc01.ihost.com/instance/522/deepqa/v1/question";
 
-        $data = array("question" => array("questionText" => $question));
+	$data = array
+		(
+			"question" => array
+			(
+				"questionText" => $question,
+				"items" => 10,
+				"evidenceRequest" => array
+				(
+					"items" => 10
+				),
+			)
+		);
 
         $headers = array(
             "Content-type: application/json",
