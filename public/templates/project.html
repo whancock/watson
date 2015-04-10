@@ -1,58 +1,65 @@
 <div ng-controller="ProjectCtrl as projectCtrl">
-
 	<div ng-include src="'templates/header.html'"></div>
-
 	<div class="body-with-margin">
 
-		<h1>Demo Project</h1>
+		<h1>Project 1: Crop Research</h1>
+
 
 		<div class="row">
-
-			<div class="col-xs-6">
-				
-				<form ng-submit="projectCtrl.askQuestion(projectCtrl.question)">
-					<input ng-model="projectCtrl.question" type="text" style="font-size: 30px;" size="25" />
-				</form>
-
-
-
-				<div ng-show="projectCtrl.needsApproval">
-					
-					<div class=col-xs-6>
-						<h3>Current Question:</h3>
-						<div>{{projectCtrl.currentQuestion}}</div>
-						<div>{{projectCtrl.currentAnswer}}</div>
-					</div>
-
-					<div class=col-xs-6>
-						<h3></h3>
-						<a href="#" ng-click="projectCtrl.approve()">Save</a>
-						<a href="#" ng-click="projectCtrl.deny()">See more</a>
-					</div>
-
+			<div class="col-xs-6 chat">
+				<h1>Ask Watson</h1>
+				<div id="chat-log" class="chat-log">
+					<ul>
+						<li ng-repeat="qaPair in projectCtrl.setQAPairs" chat-down-directive>
+							<div class="user chatlabel">You:</div>
+							<div class="user chatanswer">{{qaPair.question}}</div>
+							<div class="watson chatlabel">Watson:</div>
+							<div class="watson chatanswer">{{qaPair.answer}}</div>
+						</li>
+					</ul>
+				</div>
+				<div class="chat-entry">
+					<form ng-submit="projectCtrl.chatQuestion(projectCtrl.question)">
+						<input ng-model="projectCtrl.question" type="text" class="user submit" />
+						<!-- <button type="button" class="btn btn-default" aria-label="Send"> -->
+							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+						<!-- </button> -->
+					</form>
+					<!-- Insert icon (font-awesome) -->
+					<!-- <i class="fa fa-camera-retro fa-lg">fa-lg</i> -->
+					<!--  Glypicon attempt 					 -->
 				</div>
 
-
+				<!-- TODO Let's ditch this and have automatic submission -->
+				<!-- <div ng-show="projectCtrl.needsApproval">
+				<div class=col-xs-6>
+				<h3>Current Question:</h3>
+				<div>{{projectCtrl.currentQuestion}}</div>
+				<div>{{projectCtrl.currentAnswer}}</div>
+				</div>
+				<div class=col-xs-6>
+				<h3></h3>
+				<a href="#" ng-click="projectCtrl.approve()">Save</a>
+				<a href="#" ng-click="projectCtrl.deny()">See more</a>
+				</div>
+				</div> -->
 			</div>
 
-			<div class="col-xs-6">
-				
-
-				<ul>
-					<li ng-repeat="qaPair in projectCtrl.setQAPairs">
-						<div>{{qaPair.question}}</div>
-						<div>{{qaPair.answer}}</div>
-					</li>
-
-				</ul>
-
-
-			</div>
-			
-
+			<!-- <div class="col-xs-6">
+			<ul>
+			<li ng-repeat="qaPair in projectCtrl.setQAPairs">
+			<div>{{qaPair.question}}</div>
+			<div>{{qaPair.answer}}</div>
+			</li>
+			</ul>
+			</div> -->
 		</div>
-
-		
-
 	</div>
 </div>
+<script>
+function scrollChat () {
+	elem = document.getElementById("chat-log"); 
+	elem.scrollTop = elem.scrollHeight;
+}
+window.onload(scrollChat());
+</script>
