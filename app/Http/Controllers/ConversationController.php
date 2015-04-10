@@ -34,9 +34,14 @@ class ConversationController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 		//
+        $conversation = new Conversation;
+        $conversation->name = $request->input('name');
+        $conversation->save();
+
+        return response()->json($conversation);
 	}
 
 	/**
@@ -48,6 +53,7 @@ class ConversationController extends Controller {
 	public function show($id)
 	{
 		//
+		return Conversation::find($id)->toJson();
 	}
 
 	/**

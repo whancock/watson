@@ -26,8 +26,11 @@ Route::group(array('prefix' => 'api'), function() {
 
 
 
-    Route::resource('question', 'QuestionController');
-    Route::resource('conversation', 'ConversationController');
+    Route::resource('questions', 'QuestionController');
+    Route::resource('conversations', 'ConversationController');
+    Route::resource('answers', 'AnswerController');
+
+    Route::resource('conversations.questions', 'ConversationQuestionController');
 
 
 

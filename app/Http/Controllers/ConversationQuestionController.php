@@ -3,20 +3,21 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Question;
+use App\Conversation;
 
 use Illuminate\Http\Request;
 
-class QuestionController extends Controller {
+class ConversationQuestionController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index($conversationId)
 	{
-		return Question::all()->toJson();
+		//
+		return response()->json(Conversation::find($conversationId)->questions);
 	}
 
 	/**
@@ -34,17 +35,10 @@ class QuestionController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(Request $request)
+	public function store()
 	{
 		//
-        $question = new Question;
-        $question->text = $request->input('text');
-        $question->conversation_id = $request->input('conversation_id');
-        $question->save();
-
-        return response()->json($question);
-
-    }
+	}
 
 	/**
 	 * Display the specified resource.

@@ -3,11 +3,11 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Question;
+use App\Answer;
 
 use Illuminate\Http\Request;
 
-class QuestionController extends Controller {
+class AnswerController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -16,7 +16,8 @@ class QuestionController extends Controller {
 	 */
 	public function index()
 	{
-		return Question::all()->toJson();
+		//
+		return Answer::all()->toJson();
 	}
 
 	/**
@@ -24,7 +25,7 @@ class QuestionController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create(Request $request)
 	{
 		//
 	}
@@ -37,14 +38,13 @@ class QuestionController extends Controller {
 	public function store(Request $request)
 	{
 		//
-        $question = new Question;
-        $question->text = $request->input('text');
-        $question->conversation_id = $request->input('conversation_id');
-        $question->save();
+		$answer = new Answer;
+        $answer->text = $request->input('text');
+        $answer->question_id = $request->input('question_id');
+        $answer->save();
 
-        return response()->json($question);
-
-    }
+        return response()->json($answer);
+	}
 
 	/**
 	 * Display the specified resource.
@@ -55,6 +55,7 @@ class QuestionController extends Controller {
 	public function show($id)
 	{
 		//
+		
 	}
 
 	/**

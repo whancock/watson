@@ -5,5 +5,9 @@ use Illuminate\Database\Eloquent\Model;
 class Conversation extends Model {
 
 	//
+	public function questions()
+    {
+        return $this->hasMany('App\Question');
+    }
 
 }
