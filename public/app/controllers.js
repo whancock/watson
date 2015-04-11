@@ -36,9 +36,11 @@ angular.module('watson')
     	var ctrl = this;
 
         ctrl.savedAnswers = [];
-        ctrl.pinAnswer = function(answer) {
-            console.log('pinning', answer);
-            ctrl.savedAnswers.push(answer);
+        ctrl.pinAnswer = function(question, answer) {
+            ctrl.savedAnswers.push({
+                question: question,
+                answer: answer
+            });
         };
 
 
@@ -46,15 +48,6 @@ angular.module('watson')
     	ctrl.currentQuestion = '';
     	ctrl.currentAnswer = '';
 
-	/*
-    	  ctrl.setQAPairs = [{
-    	  question: "what is this question?",
-    	  answer: "It's a moose!"
-    	  }, {
-    	  question: "What in the hell?",
-    	  answer: "Yeah yeah!"
-    	  }];
-	*/
 
         ctrl.setQAPairs = [
             
