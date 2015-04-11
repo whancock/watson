@@ -2,4 +2,18 @@
 
 # 3 minutes (12 scenes?)
 
+# Initial question
 Patrick is a poor Rwandan farmer looking to provide for his family by making the most of his crop space. He wants to know what he can intercrop with his bananas to get the most out of his modest plot of ground, but he doesn't know what kind of crops will work harmoniously in between his banana rows. 
+
+# Pain
+Patrick starts by using his favorite search engine, asking his question. Sorting through the answers he learns that there are a number of agriculture forums available, and so he visits the top result. He then searches the forum with his question to see if it has been asked, but after some time searching answers it looks like no one has posed the question before. He registers an account with the forum, posts his question, and waits. Since Patrick has been learning to use the internet for some time now, he knows that he can increase his chances by doing the same thing on another one or two forums, searching, registering, and posting his question. 
+
+Over the course of a weeks he gets into conversations on the forums, chatting back and forth and gaining some ideas. One early suggestion is to try growing coffee, like all his neighbors; but he wants to do something different, something more original. He's intrigued when one forum user suggests using ginger. He repeats the same process of searching around and also keeps his conversation going on the forum. Finally, after a week or two process of asking questions and searching with his smart phone, Patrick decides to go with ginger, using the instructions and information that he has painstakingly gathered from his searches. 
+
+# Gain
+You can probably identify with Patrick and the difficulties there can be for finding answers online. Our application offers a better way. 
+
+Meet Wasabi, the power behind the EMDW project. In EMDW, Watson cuts out the the painful steps of searching and registering only to learn that your question is already answered somewhere; and because EMDW learns from its users, it learns over time how to answer questions itself, when users aren't satisfied with existing answers. The answers that are selected are factored into Watson's confidence and understanding and will help users with similar, but distinct, questions. 
+
+# Conversations
+Imagine being able to instantly, at any time, chat with your own personal consultant. Wasabi, powered by IBM's Watson, saves Patrick from all that waiting, searching, and registering. For Patrick, guidance is as simple as a chatbox, and Watson starts thinking immediately. After each question users have the option of marking useful answers and saving links and ideas that Watson gives them. In addition, Watson also shows the user where its answers are coming from. The result is an immediate one-on-one consultation that users can trust. And when those projects take time, whether it's waiting for plants to grow or rain to fall, each conversation with Watson is saved to be resumed later, where users can easily review and mark key ideas. 
