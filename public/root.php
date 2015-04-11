@@ -31,8 +31,10 @@
     <script src="app/api.js"></script>
 
     <link rel="stylesheet" href="app/app.css">
-
-
+    
+    <!-- load d3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.js"></script>
+    
 </head>
 <body>
 	<div ng-view></div>
