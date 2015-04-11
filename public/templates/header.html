@@ -1,18 +1,16 @@
 <div class="navbar navbar-default" role="navigation" bs-navbar>
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">Watson App</a>
+        <a class="navbar-brand" href="#">Elementary, My Dear Wasabi</a>
     </div>
     <ul class="nav navbar-nav">
         <li data-match-route="/?(navbar)?"><a href="/">Home</a></li>
-       <!-- <li data-match-route="/page-one"><a href="#/page-one">Page One</a></li>
-        <li data-match-route="/page-two.*"><a href="#/page-two/sub-a">Page Two</a></li>-->
     </ul>
 
     <ul class="nav navbar-nav navbar-form navbar-right">
         <li>
             <form ng-submit="watsonCtrl.askWatson(watsonCtrl.question)">
                 <div class="form-group">
-                    <input ng-model="watsonCtrl.question" class="form-control" placeholder="Search Watson!" type="text" size="40" />
+                    <input ng-model="watsonCtrl.question" class="form-control" placeholder="Search Community!" type="text" size="40" />
                 </div>
             </form>
         </li>
