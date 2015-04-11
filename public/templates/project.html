@@ -11,7 +11,7 @@
 				<h3>Saved Answers</h3>
 				<ul>
 					<li ng-repeat="pin in projectCtrl.savedAnswers">
-						{{pin.question}}
+						<b>{{pin.question}}</b><br />
 						{{pin.answer}}
 					</li>
 				</ul>
@@ -52,6 +52,15 @@
 				
 				<h3>Watson's Brain</h3>
 
+				<h5>Link</h5>
+				{{projectCtrl.currentAnswer.link}}
+
+				<h5>Evidence</h5>
+				<ul>
+					<li ng-repeat="evidence in projectCtrl.currentAnswer.evidence">
+						{{evidence}}
+					</li>
+				</ul>
 
 			</div>
 
