@@ -1,17 +1,30 @@
-angular.module('watson').factory('WsWatson', ['$resource', function($resource) {
-
-	return $resource('/index.php/api/ask/:question', {}, {
-		ask: {
-			method: 'GET',
-			isArray: false
-		}
-	})
-}])
+angular.module('watson')
 
 
-.factory('WsConversations', ['$resource', function($resource) {
+	.factory('WsWatson', ['$resource', function($resource) {
 
-    return $resource('/index.php/api/conversations/', {}, {
-    	// default GET
-    })
-}])
+		return $resource('/index.php/api/ask/:question', {}, {
+			ask: {
+				method: 'GET',
+				isArray: false
+			}
+		})
+	}])
+
+
+	.factory('WsConversations', ['$resource', function($resource) {
+
+	    return $resource('/index.php/api/conversations/', {}, {
+	    	// default GET
+	    })
+	}])
+
+	.factory('WsData', ['$resource', function($resource) {
+		return $resource('/data.json', {}, {
+			query: {
+				isArray: false
+			}
+		});
+	}])
+
+;

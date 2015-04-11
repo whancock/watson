@@ -2,7 +2,6 @@ angular.module('watson')
 
     .directive('dThree', [function() {
     
-    
         return {
         
             restrict: 'EA',
@@ -29,10 +28,22 @@ angular.module('watson')
                     
                 */
                 
-                
-                
             }
-        
         };
-    
-    }]);
+    }])
+
+    .directive('chatDownDirective', function() {
+
+        return {
+            link: function(scope, element, attrs) {
+                
+                if (scope.$last) {
+                    elem = document.getElementById("chat-log");
+                    elem.scrollTop = elem.scrollHeight;
+                    console.log("scroll top is:" + elem.scrollTop + " scroll height is:" + elem.scrollHeight);
+                }
+            }
+        };
+    })
+
+;
