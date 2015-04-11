@@ -8,11 +8,11 @@ angular.module('watson')
             restrict: 'EA',
             templateUrl: 'templates/graph.html',
             link: function(scope, element, attrs) {
-                console.log("I'm linked");
+                //console.log("I'm linked");
                 
                 
                 var data = [1, 2, 3, 4, 5];
-                d3.select(".chart").append("p").text("New paragraph!");
+                //d3.select(".chart").append("p").text("New paragraph!");
                 /*
                 var chart = d3.select(".chart");
                 

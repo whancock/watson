@@ -35,6 +35,12 @@ angular.module('watson')
 
     	var ctrl = this;
 
+        ctrl.savedAnswers = [];
+        ctrl.pinAnswer = function(answer) {
+            console.log('pinning', answer);
+            ctrl.savedAnswers.push(answer);
+        };
+
 
     	ctrl.needsApproval = false;
     	ctrl.currentQuestion = '';
@@ -126,13 +132,19 @@ angular.module('watson')
 
     }])
 
-    .directive('chatDownDirective', function(){
-	return function(scope, element, attrs) {
-	    if (scope.$last){
-		elem = document.getElementById("chat-log");
-		elem.scrollTop = elem.scrollHeight;
-		console.log("scroll top is:" + elem.scrollTop + " scroll height is:" + elem.scrollHeight);
-	    }
-	}
+    .directive('chatDownDirective', function() {
+
+        return {
+            scope: true,
+            link: function(scope, element, attrs) {
+                
+                if (scope.$last) {
+                    elem = document.getElementById("chat-log");
+                    elem.scrollTop = elem.scrollHeight;
+                    console.log("scroll top is:" + elem.scrollTop + " scroll height is:" + elem.scrollHeight);
+                }
+            }
+
+        };
     })
 ;
