@@ -10,7 +10,10 @@
 			<div class="col-xs-3">
 				<h3>Saved Answers</h3>
 				<ul>
-					<li ng-repeat="answer in projectCtrl.savedAnswers">{{answer}}</li>
+					<li ng-repeat="pin in projectCtrl.savedAnswers">
+						{{pin.question}}
+						{{pin.answer}}
+					</li>
 				</ul>
 			</div>
 
@@ -21,7 +24,7 @@
 							<div class="user chatlabel">You:</div>
 							<div class="user chatanswer">{{qaPair.question}}</div>
 							<div class="watson chatlabel">
-								<i ng-click="projectCtrl.pinAnswer(qaPair.answer)" style="cursor: pointer;" class="fa fa-thumb-tack"></i>
+								<i ng-click="projectCtrl.pinAnswer(qaPair.question, qaPair.answer)" style="cursor: pointer;" class="fa fa-thumb-tack"></i>
 								 Watson:
 							 </div>
 							<div class="watson chatanswer">{{qaPair.answer}}</div>
@@ -48,7 +51,7 @@
 			<div col-xs-3>
 				
 				<h3>Watson's Brain</h3>
-				
+
 
 			</div>
 
