@@ -1,6 +1,6 @@
 angular.module('watson')
 
-.controller('WatsonCtrl', ['WsWatson', 'WsConversations', function(WsWatson, WsConversations) {
+.controller('WatsonCtrl', ['WsWatson', 'WsConversations', 'WsData', function(WsWatson, WsConversations, WsData) {
 
     var ctrl = this;
 
