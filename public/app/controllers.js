@@ -8,9 +8,7 @@ angular.module('watson')
         ctrl.mockedData = data;
     });
 
-
     ctrl.askWatson = function(question) {
-
        WsWatson.ask({
           question: question
       }, function(result) {
@@ -27,8 +25,6 @@ angular.module('watson')
             };
         });
    };
-
-
 
 }])
 
