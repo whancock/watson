@@ -20,6 +20,11 @@ Route::any('project', function() {
     return View('root');
 });
 
+Route::any('forum', function() {
+    return View('root');
+});
+
+
 
 Route::group(array('prefix' => 'api'), function() {
 

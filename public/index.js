@@ -8,6 +8,8 @@ angular.module('watson', ['ngRoute', 'ngResource', 'mgcrea.ngStrap'])
 		templateUrl: 'templates/index.html'
 	}).when('/project', {
 		templateUrl: 'templates/project.html'
+	}).when('/forum', {
+		templateUrl: 'templates/forum.html'
 	}).otherwise({
 		redirectTo: '/'
 	});
