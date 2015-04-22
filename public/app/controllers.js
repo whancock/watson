@@ -101,4 +101,19 @@ ctrl.currentAnswer = '';
 
 
     }])
+
+
+  .controller('ForumControl', function(WsForum) {
+
+
+    var ctrl = this;
+
+    WsForum.query(function(data) {
+
+      ctrl.fdata = data;
+
+    });
+
+
+  })
 ;

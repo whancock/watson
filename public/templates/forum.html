@@ -1,0 +1,11 @@
+<div ng-include src="'templates/header.html'"></div>
+
+<div ng-controller="ForumControl as forumCtrl">
+	
+	<div ng-repeat="question in forumCtrl.fdata.questions">
+
+		<div>{{question.question}}</div>
+
+	</div>
+
+</div>

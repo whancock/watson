@@ -27,4 +27,12 @@ angular.module('watson')
 		});
 	}])
 
+	.factory('WsForum', ['$resource', function($resource) {
+		return $resource('/dataforum.json', {}, {
+			query: {
+				isArray: false
+			}
+		});
+	}])
+
 ;
