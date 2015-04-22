@@ -1,0 +1,130 @@
+{
+	"questions":
+	{
+		"question": "What can I intercrop with bananas?",
+		"data": {
+	            "tags": ["banana", "cultivation", "intercrop"],
+			    "votes": 10
+		},
+	    	"question": "How do I cultivate ginger?",
+	        "data": {
+	            	"tags": ["cultivation", "ginger"],
+			"votes": 10
+		},
+		"question": "What are good crops to grow in Kigali, Rwanda?",
+		"data": {
+			"tags": ["cultivation", "crop", "Rwanda"],
+			"votes": 10
+		},
+		"question": "What are the most popular crops in Kigali, Rwanda?",
+		"data": {
+			"tags": ["cultivation", "crop", "Rwanda"],
+			"votes": 10
+		},
+		"question": "How do I cultivate bananas?",
+		"data": {
+			"tags": ["banana", "cultivation"],
+			"votes": 10
+		},
+		"question": "What are proper conditions for growing ginger?",
+		"data": {
+			"tags": ["cultivation","ginger", "soil", "climate"],
+			"votes": 10
+		},
+		"question": "Do you know how to cultivate ginger?",
+		"data": {
+			"tags": ["cultivation", "ginger"],
+			"votes": 10
+		},
+		"question": "When is the proper time to plant ginger?",
+		"data": {
+			"tags": ["cultivation","season", "ginger"],
+			"votes": 10
+		},
+		"question": "Is spring a good time to plant ginger?",
+		"data": {
+			"tags": ["cultivation","season", "ginger", "spring"],
+			"votes": 10
+		},
+		"question": "Is winter a good time to plant ginger?",
+		"data": {
+			"tags": ["cultivation","season", "ginger", "winter"],
+			"votes": 10
+		},
+		"question": "How should I store ginger after harvest?",
+		"data": {
+			"tags": ["harvest","storage", "ginger"],
+			"votes": 10
+		},
+		"question": "Can coffee be intercropped with bananas?",
+		"data": {
+			"tags": ["cultivation", "banana", "coffee", "intercrop"],
+			"votes": 10
+		},
+		"question": "What crops can be planted with bananas?",
+		"data": {
+			"tags": ["cultivation","banana", "intercrop"],
+			"votes": 10
+		},
+		"question": "Are there benefits to intercropping bananas and coffee?",
+		"data": {
+			"tags": ["cultivation","banana", "coffee", "intercrop"],
+			"votes": 10
+		},
+		"question": "How does banana cultivation work?",
+		"data": {
+			"tags": ["banana", "cultivation"],
+			"votes": 10
+		},
+		"question": "How do I use suckers to grow a new banana tree?",
+		"data": {
+			"tags": ["banana","banana sucker", "cultivation"],
+			"votes": 10
+		},
+		"question": "What are banana suckers?",
+		"data": {
+			"tags": ["banana", "banana sucker"],
+			"votes": 10
+		},
+		"question": "When should I begin intercropping with bananas?",
+		"data": {
+			"tags": ["cultivation","season", "banana", "intercrop"],
+			"votes": 10
+		}
+
+	},
+
+	"taglist":
+	[
+		"banana",
+		"banana sucker",
+		"capital",
+		"climate",
+		"coffee",
+		"crop",
+		"cultivation",
+		"drainage",
+		"drought",
+		"equipment",
+		"feed",
+		"fertilizer",
+		"fruit",
+		"ginger",
+		"harvest",
+		"intercrop",
+		"investment",
+		"irrigation",
+		"land",
+		"livestock",
+		"machinery",
+		"maize",
+		"season",
+		"soil",
+		"spring",
+		"storage",
+		"tea",
+		"vegetable",
+		"winter",
+		"yam"
+	]
+}
