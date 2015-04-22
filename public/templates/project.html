@@ -6,14 +6,30 @@
 
 
 		<div class="row">
-			<div class="col-xs-12 chat">
+
+			<div class="col-xs-3">
+				<h3>Saved Answers</h3>
+				<ul>
+					<li ng-repeat="pin in projectCtrl.savedAnswers">
+						<b>{{pin.question}}</b><br />
+						{{pin.answer}}
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-xs-6 chat">
 				<div id="chat-log" class="chat-log">
 					<ul>
 						<li ng-repeat="qaPair in projectCtrl.setQAPairs" chat-down-directive>
 							<div class="user chatlabel">You:</div>
 							<div class="user chatanswer">{{qaPair.question}}</div>
-							<div class="watson chatlabel">Watson:</div>
+							<div class="watson chatlabel">
+								<i ng-click="projectCtrl.pinAnswer(qaPair.question, qaPair.answer)" style="cursor: pointer;" class="fa fa-thumb-tack"></i>
+								 Watson:
+							 </div>
 							<div class="watson chatanswer">{{qaPair.answer}}</div>
+
+							<!-- <a href="#" ng-click="console.log('yeah')">Pin Answer</a> -->
 						</li>
 					</ul>
 				</div>
@@ -21,7 +37,7 @@
 					<form ng-submit="projectCtrl.chatQuestion(projectCtrl.question)">
 						<input ng-model="projectCtrl.question" type="text" class="user submit" />
 						<!-- <button type="button" class="btn btn-default" aria-label="Send"> -->
-							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
 						<!-- </button> -->
 					</form>
 					<!-- Insert icon (font-awesome) -->
@@ -29,24 +45,30 @@
 					<!--  Glypicon attempt 					 -->
 				</div>
 
-				<!-- TODO Let's ditch this and have automatic submission -->
-				<!-- <div ng-show="projectCtrl.needsApproval">
-				<div class=col-xs-6>
-				<h3>Current Question:</h3>
-				<div>{{projectCtrl.currentQuestion}}</div>
-				<div>{{projectCtrl.currentAnswer}}</div>
-				</div>
-				<div class=col-xs-6>
-				<h3></h3>
-				<a href="#" ng-click="projectCtrl.approve()">Save</a>
-				<a href="#" ng-click="projectCtrl.deny()">See more</a>
-				</div>
-				</div> -->
 			</div>
+
+
+			<div col-xs-3>
+				
+				<h3>Watson's Brain</h3>
+
+				<h5>Link</h5>
+				{{projectCtrl.currentAnswer.link}}
+
+				<h5>Evidence</h5>
+				<ul>
+					<li ng-repeat="evidence in projectCtrl.currentAnswer.evidence">
+						{{evidence}}
+					</li>
+				</ul>
+
+			</div>
+
+
 
             <!--<div ng-include src="'templates/graph.html'"></div>-->
             
-            <d-three></d-three>
+            
             
 			<!-- <div class="col-xs-6">
 			<ul>
@@ -58,6 +80,11 @@
 			</div> -->
 		</div>
 	</div>
+
+
+	<d-three></d-three>
+
+
 </div>
 
 <script>

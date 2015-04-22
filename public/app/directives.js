@@ -2,17 +2,16 @@ angular.module('watson')
 
     .directive('dThree', [function() {
     
-    
         return {
         
             restrict: 'EA',
             templateUrl: 'templates/graph.html',
             link: function(scope, element, attrs) {
-                console.log("I'm linked");
+                //console.log("I'm linked");
                 
                 
                 var data = [1, 2, 3, 4, 5];
-                d3.select(".chart").append("p").text("New paragraph!");
+                //d3.select(".chart").append("p").text("New paragraph!");
                 /*
                 var chart = d3.select(".chart");
                 
@@ -29,10 +28,22 @@ angular.module('watson')
                     
                 */
                 
-                
-                
             }
-        
         };
-    
-    }]);
+    }])
+
+    .directive('chatDownDirective', function() {
+
+        return {
+            link: function(scope, element, attrs) {
+                
+                if (scope.$last) {
+                    elem = document.getElementById("chat-log");
+                    elem.scrollTop = elem.scrollHeight;
+                    console.log("scroll top is:" + elem.scrollTop + " scroll height is:" + elem.scrollHeight);
+                }
+            }
+        };
+    })
+
+;
