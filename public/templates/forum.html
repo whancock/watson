@@ -1,10 +1,38 @@
 <div ng-include src="'templates/header.html'"></div>
 
-<div ng-controller="ForumControl as forumCtrl">
+<div class="body-with-margin" ng-controller="ForumControl as forumCtrl">
 	
-	<div ng-repeat="question in forumCtrl.fdata.questions">
 
-		<div>{{question.question}}</div>
+	<div ng-hide="forumCtrl.detailQuestion">
+
+		<div ng-repeat="question in forumCtrl.fdata.questions">
+
+			<div><a href="#" ng-click="forumCtrl.showDetails(question)">{{question.question}}</a></div>
+
+		</div>
+
+	</div>
+
+
+	<div ng-show="forumCtrl.detailQuestion">
+
+		<div><a href="#" ng-click="forumCtrl.detailQuestion = null">Back</a></div>
+		
+		<h2>Question</h2>
+		<div>{{forumCtrl.detailQuestion.question}}</div>
+
+		<h2>Answers</h2>
+		<ul>
+			<li ng-repeat="answer in forumCtrl.detailQuestion.answers">
+				{{answer}}
+			</li>
+		</ul>
+
+		<h2>Tags</h2>
+		<div>{{forumCtrl.detailQuestion.data.tags}}</div>
+
+		<h2>Votes</h2>
+		<div>{{forumCtrl.detailQuestion.data.votes}}</div>
 
 	</div>
 

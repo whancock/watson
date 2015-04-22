@@ -3,6 +3,10 @@
 	[
 	{
 		"question": "What can I intercrop with bananas?",
+		"answers": [
+			"there aint no shit",
+			"something else"
+		],
 		"data": {
             "tags": ["banana", "cultivation", "intercrop"],
 		    "votes": 10
