@@ -3,6 +3,7 @@
 	[
 	{
 		"question": "What can I intercrop with bananas?",
+		"answers": ["Intercropping of bananas with other crops is a common soil fertility improvement effort, which when it occurs, is sometimes a secondary benefit to the primary purpose of the practice. The following crops can be intercropped with bananas: Perennial crops such as coffee can be intercropped with bananas for provision of shed especially at establishment. They also benefit the banana by recycling nutrients from deep capture, because of their rooting system, via litter fall. Bean is the annual crop most commonly associated with banana. The two crops are compatible in a multi-story system as bean does not compete with banana above ground and is more shade tolerant that most other food crops. Maize and sweet potatoes are intercropped with the young banana plants and are phased out at canopy closure. Fruit trees like jack fruit and papaw are established with the plantation as sources of fruit and to serve as windbreaks."],
 		"data": {
             "tags": ["banana", "cultivation", "intercrop"],
 		    "votes": 10
@@ -10,6 +11,7 @@
 		},
 		{
 	    	"question": "How do I cultivate ginger?",
+	    	"answers": ["Ginger prefers rich, fertile soil. Soil rich in organic matter provides ginger with the nutrients it needs to produce flavourful, healthy rhizomes, without the need for additional fertilisers and amendments. If your soil is lacking in organic matter, stick to a regular fertilisation schedule for your ginger plant. Some ginger plants suffer tip rot, in which the tip of the rhizome begins to decay. This indicates a lack of calcium in the soil; therefore, a calcium amendment may be necessary. When adding fertilisers and supplements in areas of high rainfall, remember that rainwater pulls and leaches applications from the soil; therefore, try not to fertilise ginger plants directly before a rainstorm. Moist, well-draining soil is optimal for ginger plants. It is important that the soil mixture hold moisture; however, it is important that ginger plants not be exposed to overly saturated or waterlogged soil. The best soils for draining and moisture retention include sandy or loamy mixtures. Create a soil mixture using one part sand and one part compost for optimal drainage, as well as the proper amount of organic matter for fertilisation. Because ginger develops beneath the soil, adequate soil coverage is also required to protect the rhizome from the elements above ground. Guard against soil erosion, due to wind and rainfall, by providing a sheltered area for your ginger plant to grow."],
 	        "data": {
 	            	"tags": ["cultivation", "ginger"],
 			"votes": 10
@@ -17,6 +19,7 @@
 		},
 		{
 		"question": "What are good crops to grow in Kigali, Rwanda?",
+		"answers": ["bananas, plantains, tea, coffee, potatoes, beans, sweet potatoes, cassava, wheat, maize"],
 		"data": {
 			"tags": ["cultivation", "crop", "Rwanda"],
 			"votes": 10
@@ -24,6 +27,7 @@
 		},
 		{
 		"question": "What are the most popular crops in Kigali, Rwanda?",
+		"answers": ["bananas, plantains, tea, coffee, potatoes, beans, sweet potatoes, cassava, wheat, maize"],
 		"data": {
 			"tags": ["cultivation", "crop", "Rwanda"],
 			"votes": 10
@@ -31,6 +35,7 @@
 		},
 		{
 		"question": "How do I cultivate bananas?",
+		"answers": ["Bananas need rich, moisture and well-drained soil with 40% clay, 75% silt, 85% loam. Bananas prefer a more acidic soil with pH between 6-7.5. Low pH soil makes banana more susceptible to Panama disease. Avoid soil that is sandy, salty, nutritionally deficient and ill-drained soil. If soil is not in the most favorable condition, improve it! Light sandy soil can be improved by placing mulch around the Banana plants. This will improve water retention and prevent nutrients from percolating quickly into the soil. Nutritionally deficient soil can be improved by incorporating organic matter to the soil before you plant your Bananas and then mulch them thickly. This process should be repeated as often as possible. Bananas do not tolerate waterlogging because its roots will rot. This however can be resolved by planting the Bananas in raised beds."],
 		"data": {
 			"tags": ["banana", "cultivation"],
 			"votes": 10
@@ -38,6 +43,7 @@
 		},
 		{
 		"question": "What are proper conditions for growing ginger?",
+		"answers": ["Ginger prefers rich, fertile soil. Soil rich in organic matter provides ginger with the nutrients it needs to produce flavourful, healthy rhizomes, without the need for additional fertilisers and amendments. If your soil is lacking in organic matter, stick to a regular fertilisation schedule for your ginger plant. Some ginger plants suffer tip rot, in which the tip of the rhizome begins to decay. This indicates a lack of calcium in the soil; therefore, a calcium amendment may be necessary. When adding fertilisers and supplements in areas of high rainfall, remember that rainwater pulls and leaches applications from the soil; therefore, try not to fertilise ginger plants directly before a rainstorm. Moist, well-draining soil is optimal for ginger plants. It is important that the soil mixture hold moisture; however, it is important that ginger plants not be exposed to overly saturated or waterlogged soil. The best soils for draining and moisture retention include sandy or loamy mixtures. Create a soil mixture using one part sand and one part compost for optimal drainage, as well as the proper amount of organic matter for fertilisation. Because ginger develops beneath the soil, adequate soil coverage is also required to protect the rhizome from the elements above ground. Guard against soil erosion, due to wind and rainfall, by providing a sheltered area for your ginger plant to grow."],
 		"data": {
 			"tags": ["cultivation","ginger", "soil", "climate"],
 			"votes": 10
@@ -45,6 +51,7 @@
 		},
 		{
 		"question": "Do you know how to cultivate ginger?",
+		"answers": ["Ginger prefers rich, fertile soil. Soil rich in organic matter provides ginger with the nutrients it needs to produce flavourful, healthy rhizomes, without the need for additional fertilisers and amendments. If your soil is lacking in organic matter, stick to a regular fertilisation schedule for your ginger plant. Some ginger plants suffer tip rot, in which the tip of the rhizome begins to decay. This indicates a lack of calcium in the soil; therefore, a calcium amendment may be necessary. When adding fertilisers and supplements in areas of high rainfall, remember that rainwater pulls and leaches applications from the soil; therefore, try not to fertilise ginger plants directly before a rainstorm. Moist, well-draining soil is optimal for ginger plants. It is important that the soil mixture hold moisture; however, it is important that ginger plants not be exposed to overly saturated or waterlogged soil. The best soils for draining and moisture retention include sandy or loamy mixtures. Create a soil mixture using one part sand and one part compost for optimal drainage, as well as the proper amount of organic matter for fertilisation. Because ginger develops beneath the soil, adequate soil coverage is also required to protect the rhizome from the elements above ground. Guard against soil erosion, due to wind and rainfall, by providing a sheltered area for your ginger plant to grow."],
 		"data": {
 			"tags": ["cultivation", "ginger"],
 			"votes": 10
@@ -52,6 +59,7 @@
 		},
 		{
 		"question": "When is the proper time to plant ginger?",
+		"answers": ["Start sprouting your rhizomes (the part you eat) in late winter, so they will be ready to be transplanted in early spring. Even if your ginger will be grown exclusively indoors, the timing is still important because the plants need to receive summer sunlight."],
 		"data": {
 			"tags": ["cultivation","season", "ginger"],
 			"votes": 10
@@ -59,6 +67,7 @@
 		},
 		{
 		"question": "Is spring a good time to plant ginger?",
+		"answers": ["Start sprouting your rhizomes (the part you eat) in late winter, so they will be ready to be transplanted in early spring. Even if your ginger will be grown exclusively indoors, the timing is still important because the plants need to receive summer sunlight."],
 		"data": {
 			"tags": ["cultivation","season", "ginger", "spring"],
 			"votes": 10
@@ -66,6 +75,7 @@
 		},
 		{
 		"question": "Is winter a good time to plant ginger?",
+		"answers": ["Start sprouting your rhizomes (the part you eat) in late winter, so they will be ready to be transplanted in early spring. Even if your ginger will be grown exclusively indoors, the timing is still important because the plants need to receive summer sunlight."],
 		"data": {
 			"tags": ["cultivation","season", "ginger", "winter"],
 			"votes": 10
@@ -73,6 +83,7 @@
 		},
 		{
 		"question": "How should I store ginger after harvest?",
+		"answers": ["Place ginger in the crisper drawer of your refrigerator for approximately 3 weeks. It can also be wrapped in wax paper and placed in a sealed plastic bag in the freezer for approximately 3 months. Peeled ginger can also be preserved for up to three months in the refrigerator if submerged in a dry sherry. The ginger will absorb a slight wine flavor, and should be avoided in recipes where this would be undesirable."],
 		"data": {
 			"tags": ["harvest","storage", "ginger"],
 			"votes": 10
@@ -80,6 +91,7 @@
 		},
 		{
 		"question": "Can coffee be intercropped with bananas?",
+		"answers": ["Intercropping of bananas with other crops is a common soil fertility improvement effort, which when it occurs, is sometimes a secondary benefit to the primary purpose of the practice. The following crops can be intercropped with bananas: Perennial crops such as coffee can be intercropped with bananas for provision of shed especially at establishment. They also benefit the banana by recycling nutrients from deep capture, because of their rooting system, via litter fall. Bean is the annual crop most commonly associated with banana. The two crops are compatible in a multi-story system as bean does not compete with banana above ground and is more shade tolerant that most other food crops. Maize and sweet potatoes are intercropped with the young banana plants and are phased out at canopy closure. Fruit trees like jack fruit and papaw are established with the plantation as sources of fruit and to serve as windbreaks."],
 		"data": {
 			"tags": ["cultivation", "banana", "coffee", "intercrop"],
 			"votes": 10
@@ -87,6 +99,7 @@
 		},
 		{
 		"question": "What crops can be planted with bananas?",
+		"answers": ["Intercropping of bananas with other crops is a common soil fertility improvement effort, which when it occurs, is sometimes a secondary benefit to the primary purpose of the practice. The following crops can be intercropped with bananas: Perennial crops such as coffee can be intercropped with bananas for provision of shed especially at establishment. They also benefit the banana by recycling nutrients from deep capture, because of their rooting system, via litter fall. Bean is the annual crop most commonly associated with banana. The two crops are compatible in a multi-story system as bean does not compete with banana above ground and is more shade tolerant that most other food crops. Maize and sweet potatoes are intercropped with the young banana plants and are phased out at canopy closure. Fruit trees like jack fruit and papaw are established with the plantation as sources of fruit and to serve as windbreaks."],
 		"data": {
 			"tags": ["cultivation","banana", "intercrop"],
 			"votes": 10
@@ -94,6 +107,7 @@
 		},
 		{
 		"question": "Are there benefits to intercropping bananas and coffee?",
+		"answers": ["The first reason for intercropping indicates that intercropping coffee and banana increases food security of the farmer. In a situation where land becomes scarce, intercropping cash and food crops is a way to manage risks. The farmer gets food from his or her bananas throughout the year, as well as a small continuous income from the surplus. Furthermore, once or twice a year, depending on the location in Uganda, the smallholder farmer gets a 'cash boom' from the coffee. The study by van Asten et al. (2011) showed that for Robusta and Arabica farmers in Uganda, intercropping coffee with banana was more profitable than either monocrop. This was the case even though the bananas in a Robusta- banana intercropped field suffered and their yield value decreased - while the opposite occurred in an Arabica-banana intercropped field (Fig. 18.1). These contrasting effects of intercropping on banana yields are because Robusta coffee trees are more demanding in terms of space than Arabica trees and so are more competitive when intercropped with bananas. Intercropping had no significant effect on coffee yields. The second reason for intercropping mentioned by farmers was that coffee would be more resilient to drought when grown under banana shade. Farmers explained that when coffee trees are under banana shade they look greener, even during a drought period, than do coffee trees in full sun. This will become more important as drought events become more prevalent (van Rikxoort et al., 2011). The third reason for intercropping was that banana would provide in situ mulching material for the coffee. In Rwanda, Burundi and Uganda, mulching material has increasingly become scarce and expensive. In the past, mulch material could be found in wetlands, but at present, due to increasing population pressure, this land is becoming more populated and exploited. What is more, in Rwanda and Burundi, there was a policy, still largely in place, that all the banana mulch had to be exported to the coffee fields to make sure of sustaining coffee production of the farm. In the long term then, banana fields would produce less and less while coffee fields would benefit due to the recycling of the nutrients from the banana fields. Putting coffee and banana together on one field would decrease the labour needed to get the mulch from one field to another, or from any wetland to the coffee field. When grown together, coffee and banana will benefit from the banana mulch, which has a higher biomass than the mulch from coffee. The fourth reason for intercropping indicates that when coffee is not yet productive, the farmer is motivated to take care of the coffee field if banana is intercropped. Depending on the cultivar, coffee can be fully productive 3-5 years after planting. During these years, even if the farmer does not get any returns from the coffee, the field must still be managed to make sure that it can grow. However, a smallholder also needs to attend to other crops on the farm and, due to time or labour shortage, tends to neglect crops that are not productive. When banana is intercropped with coffee, the farmer gets food and money from the field much more quickly and is motivated to manage the bananas. Indirectly, the coffee benefits from this management. Fifthly, the thickness of berries can be an indicator of coffee quality, and when coffee grows under shade, as in intercropping, the coffee berries have more time to fill and the quality of coffee increases. This is especially the case under suboptimal management conditions, as is the case for most smallholder farmers (DaMatta, 2004). A study done by Nibasumba et al. (2011) in Burundi shows that coffee, when shaded by bananas, produces heavier berries (Fig. 18.2). The last reason, farmers explained, was that when bananas are intercropped with coffee, they provide additional animal feed for the farm in the form of banana pseudostems. This was mentioned in the Mt Elgon area in Uganda, where grazing land is scarce and livestock tends to be stall-fed. In this case, the farmer trades off the benefits of mulching against the benefits of feeding livestock."],
 		"data": {
 			"tags": ["cultivation","banana", "coffee", "intercrop"],
 			"votes": 10
@@ -101,6 +115,7 @@
 		},
 		{
 		"question": "How does banana cultivation work?",
+		"answers": ["Banana cultivation is done through clonal propagation; by using healthy suckers of about 1.5 m high and 45 cm girth and spaced at 3 by 3 m. For bananas to give maximum yield, several factors are considered important. They include: Soil type: Bananas grow in diverse types of soils, but ideally require a deep, well-drained loam soil with high humus content, which allows good root growth. Nutrient Intake: Bananas take a considerable amount of nutrients, especially potassium; those removed in harvested fruits, which must be replaced if continuous production of the plantation has to be maintained."],
 		"data": {
 			"tags": ["banana", "cultivation"],
 			"votes": 10
@@ -108,6 +123,7 @@
 		},
 		{
 		"question": "How do I use suckers to grow a new banana tree?",
+		"answers": [" 1. Examine the main banana plant for sword suckers. Sword suckers have small, sharply pointed leaves and large root systems. Water suckers have large leaves, but weak roots. 2. Look for a sword sucker that measures at least 3 feet tall. Do not select a sucker below this height. Short suckers have not yet developed strong roots and are likely to die if removed from the main plant. 3. Position the tip of a digging bar at a 30-degree angle between the main stem and the sword sucker you want to remove. 4. Push down on the digging bar to sever the connection between the stem and the sucker. 5. Lift up the sucker carefully. Take care not to damage the roots. 6. Remove all or most of the leaves from the sucker to cause the plant to focus on root growth. 7. Prepare the planting site or container for the sucker. If planting in the ground, dig a hole 2 feet deep and 3 feet wide. Mix 1 or 2 inches of compost into the soil. For container growth, select a container that is several inches wider and deeper than the sucker's root ball. Fill the container halfway with potting mix. 8.Plant the sucker in the ground or in the container. Fill the hole or container the rest of the way with soil. 9. Water the sucker deeply immediately after planting, then two or three times per week thereafter. Transplanted suckers will wilt until they recover. 10. Spread a 3- to 6-inch layer of mulch on the surface of the soil around the sucker to retain moisture. 11. Apply 1/2 cup of balanced fertilizer per sucker at the time of planting. During the plant's first year, give 2 cups of balanced fertilizer in midwinter, spring and late summer."],
 		"data": {
 			"tags": ["banana","banana sucker", "cultivation"],
 			"votes": 10
@@ -115,6 +131,7 @@
 		},
 		{
 		"question": "What are banana suckers?",
+		"answers": ["Banana plants (Musa spp.), with sweet, nutritious fruit and attractive foliage, have many uses in the kitchen and home landscape. Side shoots called suckers grow from the stem of the main plant, also known as the mother plant. When carefully removed from the main stem and replanted in the ground or in a container, a sucker can develop into a new banana plant. Suckers come in three different types, but only sword suckers, or those with a well developed root system, grow into thriving banana plants."],
 		"data": {
 			"tags": ["banana", "banana sucker"],
 			"votes": 10
@@ -122,6 +139,7 @@
 		},
 		{
 		"question": "When should I begin intercropping with bananas?",
+		"answers": ["Inter cropping of vegetables and bananas is not feasible after 6 months. The reason behind this is that vegetables need a lot of sun. If grow vegetables under shade, they tend to suffer from diseases and pests. However, the ginger crop needs shade. It is common practice in several places to use ginger under the perennial creeper crops of vegetables. Hence it is better to go for ginger as an inter-crop for bananas. The only thing to worry about is that ginger must be planted on elevated beds, with channels to avoid water logging. If needed, please contact for a tutorial on ginger planting at: (555)-555-5555."],
 		"data": {
 			"tags": ["cultivation","season", "banana", "intercrop"],
 			"votes": 10
