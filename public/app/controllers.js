@@ -114,6 +114,10 @@ ctrl.currentAnswer = '';
 
     });
 
+    ctrl.showDetails = function(question) {
+      ctrl.detailQuestion = question;
+    }
+
 
   })
 ;

@@ -25,6 +25,7 @@ Route::any('forum', function() {
 });
 
 
+
 Route::group(array('prefix' => 'api'), function() {
 
 
