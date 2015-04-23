@@ -61,3 +61,26 @@ body {
 .watson {
 	color:black;
 }
+
+.brain-link-label {
+    display: inline;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.brain-evidence-label {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#brain-evidence-box {
+	display: table;
+}
+
+#brain-evidence-box > ul {
+    padding: 0;
+}
+
+.brain-evidence-li {
+    margin-bottom: 1em;
+}

@@ -26,7 +26,7 @@
 
 	"seedResponses": [
 		{
-			"question": "What are good crops to grow in Kigali, Rwanda?",
+			"question": "What are good crops to grow in Kigali, Rwanda-bana?",
 			"answer": "Reliant on rain-fed agriculture, Rwanda is highly vulnerable to climate change. Increases in temperature and changes to rainfall patterns, resulting in floods, landslides and droughts, significantly reduce crop yields, negatively impacting livelihoods, food security and export earnings. Rising temperatures are also predicted to increase the spread of pests and diseases, while the yield of some crops (including maize and rice) is forecast to drop by 10-15 per cent for every one degree Centigrade rise in minimum temperature. And as temperatures rise, the altitudes at which tea and coffee can be grown will also rise, which may affect the land available to grow these crops, due to differing soils and steeper slopes, and lead to conflict over land."
 	    }, {
 			"question": "What are the most popular crops in Kigali, Rwanda?",
@@ -37,3 +37,4 @@
 	    }
     ]
 }
+

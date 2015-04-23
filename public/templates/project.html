@@ -1,3 +1,4 @@
+<!-- <link rel="stylesheet" src="css/chat.css"> -->
 <div ng-controller="ProjectCtrl as projectCtrl">
 	<div ng-include src="'templates/header.html'"></div>
 	<div class="body-with-margin">
@@ -28,57 +29,40 @@
 								 Watson:
 							 </div>
 							<div class="watson chatanswer">{{qaPair.answer}}</div>
-
-							<!-- <a href="#" ng-click="console.log('yeah')">Pin Answer</a> -->
 						</li>
 					</ul>
 				</div>
 				<div class="chat-entry">
-					<form ng-submit="projectCtrl.chatQuestion(projectCtrl.question)">
+					<form ng-submit="projectCtrl.chatWatson(projectCtrl.question)">
 						<input ng-model="projectCtrl.question" type="text" class="user submit" />
-						<!-- <button type="button" class="btn btn-default" aria-label="Send"> -->
 						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-						<!-- </button> -->
 					</form>
-					<!-- Insert icon (font-awesome) -->
-					<!-- <i class="fa fa-camera-retro fa-lg">fa-lg</i> -->
-					<!--  Glypicon attempt 					 -->
 				</div>
-
 			</div>
 
 
 			<div col-xs-3>
 				
-				<h3>Watson's Brain</h3>
+				<h3>Watsabi's Brain</h3>
 
-				<h5>Link</h5>
-				{{projectCtrl.currentAnswer.link}}
+				<h5 class="brain-link-label">Link:</h5>
+				<span class="brain-link-content"> {{projectCtrl.currentAnswer.link}} </span>
 
-				<h5>Evidence</h5>
-				<ul>
-					<li ng-repeat="evidence in projectCtrl.currentAnswer.evidence">
-						{{evidence}}
-					</li>
-				</ul>
-
+				<h5 class="brain-evidence-label">Evidence</h5>
+				<div id="brain-evidence-box">
+					<ul>
+						<li class="brain-evidence-li" ng-repeat="evidence in projectCtrl.currentAnswer.evidence">
+							{{evidence.title}}
+						</li>
+					</ul>
+				</div>
 			</div>
 
 
 
             <!--<div ng-include src="'templates/graph.html'"></div>-->
             
-            
-            
-			<!-- <div class="col-xs-6">
-			<ul>
-			<li ng-repeat="qaPair in projectCtrl.setQAPairs">
-			<div>{{qaPair.question}}</div>
-			<div>{{qaPair.answer}}</div>
-			</li>
-			</ul>
-			</div> -->
-		</div>
+          	</div>
 	</div>
 
 
