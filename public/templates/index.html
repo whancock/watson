@@ -5,14 +5,14 @@
 	<div class="body-with-margin">
 	    
 	    <ul>
-	        <h3>The answers:</h3>
+	        <!--<h3>The answers:</h3>-->
 		    <li ng-repeat="answer in watsonCtrl.watson_result.answers">
 		    	<div>
 		    	<h4>confidence:</h4> {{answer.confidence}}
 		    	<h4>body:</h4> {{answer.text}}
 		    	</div>
 		    </li>
-		    <h3>The evidence:</h3>
+		    <!--<h3>The evidence:</h3>-->
 		    <li ng-repeat="evidence in watsonCtrl.watson_result.evidence">
 		        <h4>text:</h4>
 		    	<div>{{evidence.text}}</div>
@@ -26,7 +26,7 @@
 	    		<a style="font-size: 20px;" href="project/">Intercrop Banana</a>
 	    	</li>
 	    </ul>
-	    <!--<d-three></d-three>-->
+	    <d-three></d-three>
 
 	</div>
 </div>
