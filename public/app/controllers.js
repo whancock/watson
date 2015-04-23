@@ -118,6 +118,14 @@ ctrl.currentAnswer = '';
       ctrl.detailQuestion = question;
     }
 
+    ctrl.addVote = function() {
+      ctrl.detailQuestion.data.votes++;
+    };
+
+    ctrl.subVote = function() {
+      ctrl.detailQuestion.data.votes--;
+    };
+
 
   })
 ;
