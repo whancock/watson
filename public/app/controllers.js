@@ -35,9 +35,11 @@ angular.module('watson')
 
 	WsData.query(function(data) {
             //ctrl.mockedData = data;
-            ctrl.setQAPairs = data.seedResponses;
-            ctrl.cannedResponses = data.cannedResponses;
-	});
+            ctrl.setQAPairs = [];
+            ctrl.cannedResponses = [];
+            // ctrl.setQAPairs = data.seedResponses;
+            // ctrl.cannedResponses = data.cannedResponses;
+ 	});
 
 
 	ctrl.savedAnswers = [];
