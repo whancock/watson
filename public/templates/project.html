@@ -28,13 +28,11 @@
 								 Watson:
 							 </div>
 							<div class="watson chatanswer">{{qaPair.answer}}</div>
-
-							<!-- <a href="#" ng-click="console.log('yeah')">Pin Answer</a> -->
 						</li>
 					</ul>
 				</div>
 				<div class="chat-entry">
-					<form ng-submit="projectCtrl.chatQuestion(projectCtrl.question)">
+					<form ng-submit="projectCtrl.chatWatson(projectCtrl.question)">
 						<input ng-model="projectCtrl.question" type="text" class="user submit" />
 						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
 					</form>
@@ -44,7 +42,7 @@
 
 			<div col-xs-3>
 				
-				<h3>Watson's Brain</h3>
+				<h3>Watsabi's Brain</h3>
 
 				<h5>Link</h5>
 				{{projectCtrl.currentAnswer.link}}

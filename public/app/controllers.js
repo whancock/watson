@@ -28,7 +28,7 @@ angular.module('watson')
 
     }])
 
-    .controller('ProjectCtrl', ['WsData', function(WsData) {
+    .controller('ProjectCtrl', ['WsData','WsWatson', function(WsData, WsWatson) {
 
 	var ctrl = this;
 
@@ -82,24 +82,45 @@ angular.module('watson')
 	};
 
 
-    	/*ctrl.approve = function() {
+	// Questions for the chat, this time asking Watson (instead of stored data)
+	ctrl.chatWatson = function(question) {
 
-    	  this.setQAPairs.push({
-          question: ctrl.currentQuestion,
-          answer: ctrl.currentAnswer.answer
-    	  });
+	    ctrl.needsApproval = false;
+	    ctrl.currentQuestion = '';
 
-    	  ctrl.needsApproval = false;
-    	  ctrl.currentQuestion = '';
-    	  ctrl.currentAnswer = {};
+	    var cannedAnswer = { // I suppose this isn't necessary, but it can't hurt
+		evidence: [],
+		//link: "NA",
+		answer: "Hmm... I'm not sure."
+	    };
 
-    	  };
+	    //cannedAnswer = ctrl.cannedResponses[question].pop();
+	    WsWatson.ask({
+		question: question
+	    }, function(result) {
+    		//console.log(result);
+		cannedAnswer = {
+                    meta: {
+			qclasslist: result.question.qclasslist,
+			focuslist: result.question.focuslist,
+			latlist: result.question.latlist,
+			synonymlist: result.question.synonymlist,	
+                    },
+                    answers: result.question.answers,
+		    answer: result.question.answers[0],
+                    evidence: result.question.evidencelist
+		};
+            });
 
-    	  ctrl.deny = function() {
-    	  ctrl.currentAnswer = cannedResponses[ctrl.currentQuestion].pop();
-    	  };*/
+	    ctrl.currentAnswer = cannedAnswer;
 
+	    this.setQAPairs.push({
+		question: question,
+		answer: cannedAnswer.answer
+	    });
 
+	    ctrl.question = ''; // clear input box after submission
+	};
     }])
 
 
