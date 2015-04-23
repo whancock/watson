@@ -106,6 +106,9 @@ angular.module('watson')
 	    WsWatson.ask({
 		question: question,
 	    }, function(result) {
+		answer = result.question.evidencelist[0].text || "I'm not sure, but " + result.question.evidencelist[1].text;
+		// if no answer...
+
 		cannedAnswer = {
                     meta: {
 			qclasslist: result.question.qclasslist,
@@ -115,7 +118,8 @@ angular.module('watson')
                     },
                     answers: result.question.answers,
 		    //answer: result.question.answers[0],
-		    answer: result.question.evidencelist[0].text, // This is a little goofy and doesn't always work. Look into the difference between evidence and answers for Watson
+		    //answer: result.question.evidencelist[0].text, // This is a little goofy and doesn't always work. Look into the difference between evidence and answers for Watson
+		    answer: answer,
 		    link: "NONE",
                     evidence: result.question.evidencelist
 		};
