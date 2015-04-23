@@ -59,6 +59,7 @@ angular.module('watson')
 	// Questions for the chat: instantly approved. Merges .askQuestion() and .approve()
 	ctrl.chatQuestion = function(question) {
 
+	    //var CQ = this;
 	    ctrl.needsApproval = false;
 	    ctrl.currentQuestion = '';
 
@@ -75,7 +76,7 @@ angular.module('watson')
 	    ctrl.currentAnswer = cannedAnswer;
 
 
-	    this.setQAPairs.push({
+	    ctrl.setQAPairs.push({
 		question: question,
 		answer: cannedAnswer.answer
 	    });
@@ -92,15 +93,19 @@ angular.module('watson')
 
 	    var cannedAnswer = { // I suppose this isn't necessary, but it can't hurt
 		evidence: [],
-		//link: "NA",
+		link: "NONE",
 		answer: "Hmm... I'm not sure."
 	    };
 
+	    ctrl.setQAPairs.push({
+		question: question,
+		answer: "..."
+	    });		
+
 	    //cannedAnswer = ctrl.cannedResponses[question].pop();
 	    WsWatson.ask({
-		question: question
+		question: question,
 	    }, function(result) {
-    		//console.log(result);
 		cannedAnswer = {
                     meta: {
 			qclasslist: result.question.qclasslist,
@@ -109,18 +114,27 @@ angular.module('watson')
 			synonymlist: result.question.synonymlist,	
                     },
                     answers: result.question.answers,
-		    answer: result.question.answers[0],
+		    //answer: result.question.answers[0],
+		    answer: result.question.evidencelist[0].text, // This is a little goofy and doesn't always work. Look into the difference between evidence and answers for Watson
+		    link: "NONE",
                     evidence: result.question.evidencelist
 		};
+		ctrl.currentAnswer = cannedAnswer;
+		//this.setQAPairs.push({
+		ctrl.setQAPairs.pop();
+		ctrl.setQAPairs.push({
+		    question: question,
+		    answer: cannedAnswer.answer
+		});
+		console.log(cannedAnswer.answer);
             });
 
-	    ctrl.currentAnswer = cannedAnswer;
-
-	    this.setQAPairs.push({
-		question: question,
-		answer: cannedAnswer.answer
-	    });
-
+	    //ctrl.currentAnswer = cannedAnswer;
+	    // this.setQAPairs.push({
+	    // 	question: question,
+	    // 	answer: cannedAnswer.answer
+	    // });
+	    // console.log(cannedAnswer.answer);
 	    ctrl.question = ''; // clear input box after submission
 	};
     }])

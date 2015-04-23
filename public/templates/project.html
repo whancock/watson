@@ -1,3 +1,4 @@
+<!-- <link rel="stylesheet" src="css/chat.css"> -->
 <div ng-controller="ProjectCtrl as projectCtrl">
 	<div ng-include src="'templates/header.html'"></div>
 	<div class="body-with-margin">
@@ -44,16 +45,17 @@
 				
 				<h3>Watsabi's Brain</h3>
 
-				<h5>Link</h5>
-				{{projectCtrl.currentAnswer.link}}
+				<h5 class="brain-link-label">Link:</h5>
+				<span class="brain-link-content"> {{projectCtrl.currentAnswer.link}} </span>
 
-				<h5>Evidence</h5>
-				<ul>
-					<li ng-repeat="evidence in projectCtrl.currentAnswer.evidence">
-						{{evidence}}
-					</li>
-				</ul>
-
+				<h5 class="brain-evidence-label">Evidence</h5>
+				<div id="brain-evidence-box">
+					<ul>
+						<li class="brain-evidence-li" ng-repeat="evidence in projectCtrl.currentAnswer.evidence">
+							{{evidence.title}}
+						</li>
+					</ul>
+				</div>
 			</div>
 
 
