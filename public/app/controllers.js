@@ -139,6 +139,7 @@ ctrl.currentAnswer = '';
 
       ctrl.fdata.questions.push(qObj);
       ctrl.curQuestion = "";
+      ctrl.detailQuestion = qObj;
     };
 
     ctrl.addAnswer = function(answer) {
