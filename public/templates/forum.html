@@ -5,6 +5,12 @@
 
 	<div ng-hide="forumCtrl.detailQuestion">
 
+		<form ng-submit="forumCtrl.addQuestion(forumCtrl.curQuestion)">
+			<input type="text" ng-model="forumCtrl.curQuestion" />
+		</form>
+
+		<br />
+
 		<div ng-repeat="question in forumCtrl.fdata.questions">
 
 			<div><a href="#" ng-click="forumCtrl.showDetails(question)">{{question.question}}</a></div>
@@ -23,10 +29,15 @@
 
 		<h2>Answers</h2>
 		<ul>
-			<li ng-repeat="answer in forumCtrl.detailQuestion.answers">
+			<li style="padding: 8px; margin: 8px;" ng-repeat="answer in forumCtrl.detailQuestion.answers">
 				{{answer}}
 			</li>
 		</ul>
+
+		<h2>Answer this question</h2>
+		<textarea rows="6" cols="40" ng-model="forumCtrl.curAnswer"></textarea>
+		<br />
+		<button ng-click="forumCtrl.addAnswer(forumCtrl.curAnswer)">Submit</button>
 
 		<h2>Tags</h2>
 		<div>{{forumCtrl.detailQuestion.data.tags}}</div>

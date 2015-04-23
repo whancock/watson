@@ -126,6 +126,26 @@ ctrl.currentAnswer = '';
       ctrl.detailQuestion.data.votes--;
     };
 
+    ctrl.addQuestion = function(question) {
+
+      var qObj = {
+        question: question,
+        answers: [],
+        data: {
+          tags: [],
+          votes: 0
+        }
+      };
+
+      ctrl.fdata.questions.push(qObj);
+      ctrl.curQuestion = "";
+    };
+
+    ctrl.addAnswer = function(answer) {
+      ctrl.detailQuestion.answers.push(answer);
+      ctrl.curAnswer = ""
+    };
+
 
   })
 ;
